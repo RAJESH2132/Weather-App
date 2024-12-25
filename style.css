@@ -1,0 +1,141 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+#container {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  max-width: 900px;
+  margin: 50px 50px;
+  padding: 20px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  background-color: white;
+}
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #816464;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+header p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+header div {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 12px;
+  align-items: center;
+}
+header input {
+  padding: 8px;
+  font-size: 1rem;
+  border: none;
+  width: 200px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+header button {
+  padding: 8px 10px;
+  font-size: 1rem;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #816464;
+  padding: 10px 30px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+#content-left {
+  display: flex;
+  color: white;
+}
+#loc {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-right: 5px;
+}
+#city {
+  font-size: 1.4rem;
+}
+#btn {
+  padding: 8px 10px;
+  font-size: 1rem;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#weather {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: #816464;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+#image {
+  margin-right: 10px;
+  background-color: white;
+  border-radius: 5px;
+  height: 200px;
+  width: 200px;
+  margin-bottom: 10px;
+}
+img {
+  object-fit: cover;
+  border-radius: 5px;
+  width: 200px;
+  height: 200px;
+}
+#temp,
+#weather-details {
+  background-color: white;
+  padding: 10px;
+  width: 180px;
+  height: 180px;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+#temp-details {
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+#sub-titles {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 10px;
+  display: inline-flex;
+}
+#condition {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-left: 10px;
+}

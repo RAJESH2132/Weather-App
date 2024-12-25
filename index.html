@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App</title>
+    <script src="script.js"></script>
+  </head>
+  <body onload="fetchWeather('warangal')">
+    <div id="container">
+      <header>
+        <p>Weather App</p>
+        <div>
+          <input type="text" id="cityInput" placeholder="Enter City Name" />
+          <button onclick="citySearch()">Search</button>
+        </div>
+      </header>
+      <div id="content">
+        <div id="content-left">
+          <p id="loc">Location:</p>
+          <p id="city"></p>
+        </div>
+        <button id="btn" onclick="getMyCoord()">My Weather</button>
+      </div>
+      <p id="condition"></p>
+      <div id="weather">
+        <div id="image"><img alt="" id="weather-icon" /><br /></div>
+        <div id="temp">
+          <h2>Temperature</h2>
+          <div id="temp-details">
+            <div><span id="cel"></span><span>&deg;C</span></div>
+            <br />
+            <div><span id="far"></span><span>&deg;F</span></div>
+          </div>
+        </div>
+        <div id="weather-details">
+          <div>
+            <p id="sub-titles">Wind Speed :</p>
+            <span id="speed"></span><br />
+            <p id="sub-titles">Humidity :</p>
+            <span id="humidity"></span><br />
+            <p id="sub-titles">Pressure :</p>
+            <span id="pressure"></span><br />
+            <p id="sub-titles">Visibility :</p>
+            <span id="visibility"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
