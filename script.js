@@ -31,8 +31,6 @@ function renderWeather(data) {
   const condition = data.weather[0].description;
   const iconCode = data.weather[0].icon;
   const conditionImage = categorizeWeatherImage(condition);
-  console.log(iconCode);
-  const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
   document.getElementById("city").innerText = data.name;
   document.getElementById("cel").innerText = Math.round(
     data.main.temp - 273.15
@@ -75,7 +73,6 @@ async function getMyCoord() {
   navigator.geolocation.getCurrentPosition(async (position) => {
     let lat = position.coords.latitude;
     let lon = position.coords.longitude;
-    console.log(lat, lon);
     let response = await fetch(
       `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=3cbba87794edae3feca279861aa17155`
     );
