@@ -1,3 +1,5 @@
+API_KEY = "YOUR_API_KEY_HERE";
+
 /* Logic for Showing Images */
 function categorizeWeatherImage(condition) {
   const lowerCondition = condition.toLowerCase();
@@ -50,7 +52,7 @@ function renderWeather(data) {
 /* Fetching Weather Data Based on City*/
 function fetchWeather(city) {
   fetch(
-    `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=3cbba87794edae3feca279861aa17155`
+    `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`
   )
     .then((response) => response.json())
     .then((data) => {
@@ -74,7 +76,7 @@ async function getMyCoord() {
     let lat = position.coords.latitude;
     let lon = position.coords.longitude;
     let response = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=3cbba87794edae3feca279861aa17155`
+      `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}`
     );
     let data = await response.json();
     renderWeather(data);
